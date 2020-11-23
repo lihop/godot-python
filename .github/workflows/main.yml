@@ -1,11 +1,11 @@
 name: CI build
-on:
-  push:
-    branches:
-    - master
-  pull_request:
-    branches:
-    - master
+on: [push]
+  #push:
+  #  branches:
+  #  - master
+  #pull_request:
+  #  branches:
+  #  - master
 
 
 # Global Settings

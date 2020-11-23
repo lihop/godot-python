@@ -100,6 +100,7 @@ def _patched_vars_update(env, args=None):
     vanilla_vars_update(env, args=None)
     if env["platform"] == "windows-64":
         env["TARGET_ARCH"] = "x86_64"
+        env.Append(CCFLAGS=['/O2', '/EHsc', '/DNDEBUG', '/MT'])
     elif env["platform"] == "windows-32":
         env["TARGET_ARCH"] = "x86"
 
